@@ -34,7 +34,7 @@ nav.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.45)}
 .nav-links{display:flex;gap:26px;font-size:.95rem;color:var(--mut)}
 .nav-links a:hover{color:var(--txt)}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--lime);color:#0b0b0d;font-weight:700;padding:13px 26px;border-radius:999px;border:none;cursor:pointer;font-size:1rem;transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(212,249,59,.28)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.45)}
 .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
 .btn.ghost:hover{border-color:var(--lime);box-shadow:none}
 .btn.sm{padding:12px 20px;font-size:.9rem;min-height:44px}
@@ -44,7 +44,7 @@ nav.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.45)}
 .menu-btn{display:none}
 [data-theme="light"]{--bg:#f6f6f3;--bg2:#ffffff;--card:#ffffff;--line:#dcdcd6;--txt:#141417;--mut:#55565e}
 [data-theme="light"] .kicker,[data-theme="light"] .svc-body h4,[data-theme="light"] .price,[data-theme="light"] .logo b,[data-theme="light"] .stat b,[data-theme="light"] .chip i,[data-theme="light"] .faq-q .plus,[data-theme="light"] .svc-body ul li::before,[data-theme="light"] .tag,[data-theme="light"] .eyebrow{color:#5f7d00}
-[data-theme="light"] h1 .hl{background:linear-gradient(90deg,#5f7d00,#7a9e00,#5f7d00);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent}
+[data-theme="light"] h1 .hl{color:#5f7d00}
 [data-theme="light"] .mockup-win{background:#141419}
 [data-theme="light"] nav{background:rgba(246,246,243,.9)}
 .cot{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
@@ -60,7 +60,7 @@ nav.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.45)}
 /* HERO */
 .hero{padding:150px 0 70px;position:relative}
 .hero::before{content:"";position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:720px;height:420px;background:radial-gradient(ellipse at center,rgba(212,249,59,.13),transparent 70%);pointer-events:none}
-.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lime);border:1px solid rgba(212,249,59,.35);padding:7px 16px;border-radius:999px;margin-bottom:22px}
+.eyebrow{display:block;font-size:1rem;font-weight:600;color:var(--mut);margin-bottom:14px}
 h1{font-size:clamp(2.1rem,5.4vw,3.7rem);line-height:1.12;font-weight:800;letter-spacing:-1px;max-width:800px}
 h1 .hl{color:var(--lime)}
 .hero p.sub{color:var(--mut);font-size:1.15rem;max-width:640px;margin:20px 0 32px}
@@ -71,7 +71,7 @@ h1 .hl{color:var(--lime)}
 /* HERO 3D MOCKUP (CSS puro, sin imágenes externas) */
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
 .hero-mock{position:relative;perspective:1200px;max-width:460px;width:100%;margin:0 auto}
-.mockup-win{background:#141419;border:1px solid var(--line);border-radius:18px;box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 60px rgba(212,249,59,.10);transform:rotateY(-12deg) rotateX(4deg);transform-style:preserve-3d;animation:floaty 7s ease-in-out infinite alternate;overflow:hidden}
+.mockup-win{background:#141419;border:1px solid var(--line);border-radius:18px;box-shadow:0 40px 80px rgba(0,0,0,.6);transform:rotateY(-12deg) rotateX(4deg);transform-style:preserve-3d;animation:floaty 7s ease-in-out infinite alternate;overflow:hidden}
 @keyframes floaty{from{transform:rotateY(-12deg) rotateX(4deg) translateY(0)}to{transform:rotateY(-12deg) rotateX(4deg) translateY(-12px)}}
 .mockup-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line);background:#101014}
 .mockup-dot{width:11px;height:11px;border-radius:50%}
@@ -106,7 +106,7 @@ h2{font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:800;letter-spacing:-.5px;mar
 /* SERVICES v2: bloques completos */
 .svc-stack{display:grid;gap:24px}
 .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;transition:transform .18s,border-color .18s,box-shadow .18s}
-.svc:hover{transform:translateY(-5px);border-color:rgba(212,249,59,.45);box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 44px rgba(212,249,59,.12)}
+.svc:hover{transform:translateY(-5px);border-color:rgba(212,249,59,.45);box-shadow:0 24px 60px rgba(0,0,0,.5)}
 .svc-head{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;margin-bottom:24px}
 .svc-head .ico{font-size:2.2rem;flex-shrink:0}
 .svc-head h3{font-size:1.45rem;margin-bottom:4px}
@@ -162,7 +162,7 @@ h2{font-size:clamp(1.6rem,3.6vw,2.4rem);font-weight:800;letter-spacing:-.5px;mar
 footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:.88rem}
 .foot-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
 /* WHATSAPP FLOAT */
-.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(37,211,102,.4);transition:transform .15s}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 26px rgba(0,0,0,.45);transition:transform .15s}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:32px;height:32px;fill:#fff}
 /* REVEAL */
@@ -195,7 +195,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-siz
 .orb-b{width:280px;height:280px;background:#7c5cff;bottom:-60px;left:-60px;opacity:.20;animation-delay:-5s}
 .orb-c{width:200px;height:200px;background:#25d366;top:38%;left:44%;opacity:.10;animation-delay:-9s}
 @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(50px,-40px) scale(1.15)}}
-h1 .hl{background:linear-gradient(90deg,#d4f93b,#8fe388,#d4f93b);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite}
+h1 .hl{color:var(--lime)}
 @keyframes shine{to{background-position:200% center}}
 .svc,.pf{transform-style:preserve-3d;will-change:transform}
 .svc .ico{transform:translateZ(30px)}
@@ -203,10 +203,9 @@ h1 .hl{background:linear-gradient(90deg,#d4f93b,#8fe388,#d4f93b);background-size
 .btn{position:relative;overflow:hidden}
 .btn::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .55s ease}
 .btn:hover::after{left:130%}
-.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0e0e11;padding:15px 22px}
-.marquee-track{display:flex;gap:46px;width:max-content;animation:mscroll 28s linear infinite;font-weight:700;font-size:.95rem;color:var(--mut);white-space:nowrap}
+.marquee{overflow-x:auto;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0e0e11;padding:15px 22px}
+.marquee-track{display:flex;gap:46px;width:max-content;font-weight:700;font-size:.95rem;color:var(--mut);white-space:nowrap}
 .marquee-track i{font-style:normal;color:var(--lime);margin-right:46px}
-@keyframes mscroll{to{transform:translateX(-50%)}}
 .rv{transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* ===== DEMO EN VIVO (carro 3D) — añadido 2026-10-28, solo para esta sección ===== */
@@ -280,7 +279,6 @@ h1 .hl{background:linear-gradient(90deg,#d4f93b,#8fe388,#d4f93b);background-size
 </div></div>
 
 <div class="marquee"><div class="marquee-track">
-<span><i>✦</i>Landing Pages</span><span><i>✦</i>Apps Android</span><span><i>✦</i>Kotlin</span><span><i>✦</i>Sistemas CRM</span><span><i>✦</i>Supabase</span><span><i>✦</i>Google Play</span><span><i>✦</i>Diseño UI</span><span><i>✦</i>SEO</span><span><i>✦</i>IA Integrada</span><span><i>✦</i>Soporte</span>
 <span><i>✦</i>Landing Pages</span><span><i>✦</i>Apps Android</span><span><i>✦</i>Kotlin</span><span><i>✦</i>Sistemas CRM</span><span><i>✦</i>Supabase</span><span><i>✦</i>Google Play</span><span><i>✦</i>Diseño UI</span><span><i>✦</i>SEO</span><span><i>✦</i>IA Integrada</span><span><i>✦</i>Soporte</span>
 </div></div>
 
